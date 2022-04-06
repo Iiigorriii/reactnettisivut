@@ -1,0 +1,51 @@
+export const porssilista = [
+  {
+    name: "Suomi (Helsingin pörssi)",
+    aukioloAlkuTunnit: 10,
+    aukioloAlkuMinuutit: 0,
+    aukioloLoppuTunnit: 18,
+    aukioloLoppuMinuutit: 30,
+  },
+  {
+    name: "Ruotsi (Tukholman pörssi)",
+    aukioloAlkuTunnit: 10,
+    aukioloAlkuMinuutit: 0,
+    aukioloLoppuTunnit: 18,
+    aukioloLoppuMinuutit: 30,
+  },
+  {
+    name: "Norja(Oslon pörssi)",
+    aukioloAlkuTunnit: 10,
+    aukioloAlkuMinuutit: 0,
+    aukioloLoppuTunnit: 17,
+    aukioloLoppuMinuutit: 25,
+  },
+  {
+    name: "USA(Nasdag, Nyse)",
+    aukioloAlkuTunnit: 16,
+    aukioloAlkuMinuutit: 30,
+    aukioloLoppuTunnit: 23,
+    aukioloLoppuMinuutit: 0,
+  },
+  {
+    name: "Saksa(Xetra)",
+    aukioloAlkuTunnit: 10,
+    aukioloAlkuMinuutit: 0,
+    aukioloLoppuTunnit: 18,
+    aukioloLoppuMinuutit: 30,
+  },
+  {
+    name: "Kanada(TSX, TSX Ventrue)",
+    aukioloAlkuTunnit: 16,
+    aukioloAlkuMinuutit: 30,
+    aukioloLoppuTunnit: 23,
+    aukioloLoppuMinuutit: 0,
+  },
+  {
+    name: "Englanti(LSE)",
+    aukioloAlkuTunnit: 10,
+    aukioloAlkuMinuutit: 0,
+    aukioloLoppuTunnit: 18,
+    aukioloLoppuMinuutit: 30,
+  },
+];
