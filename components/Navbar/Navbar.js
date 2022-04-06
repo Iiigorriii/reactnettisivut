@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AiOutlineAreaChart, AiFillHome } from "react-icons/ai";
+import { ImGrin2 } from "react-icons/im";
 
 import styles from "./Navbar.module.css";
 
@@ -18,6 +19,11 @@ export const Navbar = () => (
     <Link href="/porssiaukioloajat">
       <a className={styles.linkki}>
         <AiOutlineAreaChart /> Pörssi aukioloajat
+      </a>
+    </Link>
+    <Link href="/meme-generator">
+      <a className={styles.linkki}>
+        <ImGrin2 /> Meme generator
       </a>
     </Link>
   </nav>
