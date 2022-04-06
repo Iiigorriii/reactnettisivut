@@ -55,7 +55,7 @@ const Porssiaukioloajat = () => {
       <table className={styles.table}>
         <thead className={styles.thead}>
           <tr>
-            <th>Pörssi</th>
+            <th>Markkina</th>
             <th>Auki</th>
             <th>Kiinni</th>
             <th>Status</th>
@@ -67,7 +67,11 @@ const Porssiaukioloajat = () => {
               <td className={styles.td}>{valmis.name}</td>
               <td className={styles.td}>{valmis.auki}</td>
               <td className={styles.td}>{valmis.kiinni}</td>
-              <td className={`${styles.td} ${valmis.isAuki ? styles.auki : styles.kiinni}`}>
+              <td
+                className={`${styles.td} ${
+                  valmis.isAuki ? styles.auki : styles.kiinni
+                }`}
+              >
                 {valmis.isAuki ? "Auki" : "Kiinni"}
               </td>
             </tr>
