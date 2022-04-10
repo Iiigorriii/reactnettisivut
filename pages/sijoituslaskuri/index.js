@@ -4,7 +4,12 @@ import { Layout } from "../../components/Layout";
 import styles from "../../styles/Sijoituslaskuri.module.css";
 
 const Sijoituslaskuri = () => {
-  const calculateTotal = (startInvestment, monthlyInvestment, years, interest) => {
+  const calculateTotal = (
+    startInvestment,
+    monthlyInvestment,
+    years,
+    interest
+  ) => {
     const calculate = (startInvestment, montlyInvestment, years, interest) => {
       if (years < 1) {
         return startInvestment;
@@ -20,7 +25,14 @@ const Sijoituslaskuri = () => {
       );
     };
 
-    return Math.round(calculate(+startInvestment, +monthlyInvestment, +years, 1 + interest / 100));
+    return Math.round(
+      calculate(
+        +startInvestment,
+        +monthlyInvestment,
+        +years,
+        1 + interest / 100
+      )
+    );
   };
   const [startInvestment, setStartInvestment] = useState(0);
   const [monthlyInvestment, setMonthlyInvestment] = useState(0);
@@ -29,7 +41,12 @@ const Sijoituslaskuri = () => {
   const [answer, setAnswer] = useState("");
 
   const onClick = () => {
-    const result = calculateTotal(startInvestment, monthlyInvestment, years, interest);
+    const result = calculateTotal(
+      startInvestment,
+      monthlyInvestment,
+      years,
+      interest
+    );
     setAnswer(result);
   };
 
@@ -68,7 +85,9 @@ const Sijoituslaskuri = () => {
           </div>
 
           <div className={styles.label}>
-            <label htmlFor="Vuotuinen tuotto-odotus">Vuotuinen tuotto-odotus</label>
+            <label htmlFor="Vuotuinen tuotto-odotus">
+              Vuotuinen tuotto-odotus
+            </label>
             <input
               type="text"
               id="Vuotuinen tuotto-odotus"
@@ -79,7 +98,11 @@ const Sijoituslaskuri = () => {
         </div>
         <button onClick={() => onClick()}>Laske</button>
       </div>
-      <h2>Sijoituksen arvo sijoitusajan päättyessä: {answer ? answer + " €" : ""}</h2>
+      <h2>
+        {answer
+          ? "Sijoituksen arvo sijoitusajan päättyessä: " + answer + " €"
+          : ""}
+      </h2>
     </Layout>
   );
 };

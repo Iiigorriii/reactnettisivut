@@ -25,7 +25,9 @@ const OneRepMax = () => {
       </p>
       <div className={styles.laskuri}>
         <div className={styles.label}>
-          <label htmlFor="Lift">Lift</label>
+          <label htmlFor="Lift">
+            <p className={styles.style1}>Lift:</p>
+          </label>
           <input
             type="number"
             id="Lift"
@@ -34,7 +36,9 @@ const OneRepMax = () => {
           />
         </div>
         <div className={styles.label}>
-          <label htmlFor="Repetitions">Repetitions</label>
+          <label htmlFor="Repetitions">
+            <p className={styles.style1}>Repetitions:</p>
+          </label>
           <input
             type="number"
             id="Repetitions"
@@ -43,9 +47,9 @@ const OneRepMax = () => {
           />
         </div>
         <div>
-          <button onClick={() => onClick()}>Laske</button>
+          <button onClick={() => onClick()}>Count</button>
         </div>
-        <h2>One rep max: {answer}</h2>
+        <h2>{answer ? "One rep max: " + answer : ""}</h2>
       </div>
     </Layout>
   );

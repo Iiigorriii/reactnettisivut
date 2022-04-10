@@ -4,10 +4,15 @@
     gap: 0.3rem;
     width: 100%;
   }
-  .laskuri {
+.laskuri {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     max-width: 200px;
   }
     
+.style1 {
+    margin: 0.5rem 0;
+    font-size: medium;
+    font-weight: bold;
+}
