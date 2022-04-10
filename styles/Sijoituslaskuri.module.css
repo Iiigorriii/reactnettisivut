@@ -5,6 +5,13 @@
   max-width: 500px;
 }
 
+@media only screen and (max-width: 400px) {
+  .laskuriRivi {
+    flex-direction: column;
+  }
+}
+
+
 .laskuriRivi {
   display: flex;
   gap: 1rem;
