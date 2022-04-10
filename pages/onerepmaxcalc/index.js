@@ -47,4 +47,4 @@ const OneRepMax = () => {
   );
 };
 
-export default oneRepMax;
+export default OneRepMax;
