@@ -49,8 +49,8 @@ const OneRepMax = () => {
         <div>
           <button onClick={() => onClick()}>Count</button>
         </div>
-        <h2>{answer ? "One rep max: " + answer + " Kg" : ""}</h2>
       </div>
+      <h2>{answer ? "One rep max: " + answer + " Kg" : ""}</h2>
     </Layout>
   );
 };
