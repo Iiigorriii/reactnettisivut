@@ -3,7 +3,7 @@ import { Layout } from "../../components/Layout";
 
 import styles from "../../styles/OneRepMax.module.css";
 
-const oneRepMax = () => {
+const OneRepMax = () => {
   const [Lift, setLift] = useState("0");
   const [Repetitions, setRepetitions] = useState("0");
   const [answer, setAnswer] = useState("");
