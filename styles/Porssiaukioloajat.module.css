@@ -8,17 +8,10 @@
 }
 
 .td {
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 1.5rem;
 }
 
 .thead {
   background-color: rgb(214, 214, 214);
 }
 
-.auki {
-  color: green;
-}
-
-.kiinni {
-  color: red;
-}

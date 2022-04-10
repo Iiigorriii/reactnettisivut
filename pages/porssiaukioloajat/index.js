@@ -1,3 +1,4 @@
+import { Badge } from "@chakra-ui/react";
 import { Layout } from "../../components/Layout";
 import { porssilista } from "../../misc/porssilista";
 
@@ -67,12 +68,16 @@ const Porssiaukioloajat = () => {
               <td className={styles.td}>{valmis.name}</td>
               <td className={styles.td}>{valmis.auki}</td>
               <td className={styles.td}>{valmis.kiinni}</td>
-              <td
-                className={`${styles.td} ${
-                  valmis.isAuki ? styles.auki : styles.kiinni
-                }`}
-              >
-                {valmis.isAuki ? "Auki" : "Kiinni"}
+              <td>
+                {valmis.isAuki ? (
+                  <Badge variant="subtle" colorScheme="green">
+                    Open
+                  </Badge>
+                ) : (
+                  <Badge variant="subtle" colorScheme="red">
+                    Closed
+                  </Badge>
+                )}
               </td>
             </tr>
           ))}
