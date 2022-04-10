@@ -1,12 +1,16 @@
-.linkki {
-  float: left;
-  padding: 12px;
-  color: rgb(255, 255, 255);
+.nappula {
   text-decoration: none;
   font-size: 17px;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .navbar {
   overflow: hidden;
   background-color: #333;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding:  0.5rem 1rem;
 }
+

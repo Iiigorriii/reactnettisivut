@@ -1,3 +1,4 @@
+import { Button, Heading, Input } from "@chakra-ui/react";
 import { useState } from "react";
 import { Layout } from "../../components/Layout";
 
@@ -28,7 +29,7 @@ const OneRepMax = () => {
           <label htmlFor="Lift">
             <p className={styles.style1}>Lift (Kg):</p>
           </label>
-          <input
+          <Input
             type="number"
             id="Lift"
             value={Lift}
@@ -39,7 +40,7 @@ const OneRepMax = () => {
           <label htmlFor="Repetitions">
             <p className={styles.style1}>Repetitions:</p>
           </label>
-          <input
+          <Input
             type="number"
             id="Repetitions"
             value={Repetitions}
@@ -47,10 +48,13 @@ const OneRepMax = () => {
           />
         </div>
         <div>
-          <button onClick={() => onClick()}>Count</button>
+          <Button onClick={() => onClick()}>Count</Button>
         </div>
       </div>
-      <h2>{answer ? "One rep max: " + answer + " Kg" : ""}</h2>
+      <br />
+      <Heading size={"md"}>
+        {answer ? "One rep max: " + answer + " Kg" : ""}
+      </Heading>
     </Layout>
   );
 };

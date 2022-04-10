@@ -1,7 +1,8 @@
+import { Heading } from "@chakra-ui/react";
 import styles from "./Header.module.css";
 
 export const Header = () => (
   <header className={styles.mainheader}>
-    <h1>VeikkaP</h1>
+    <Heading style={{ padding: "1rem" }}>VeikkaP</Heading>
   </header>
 );

@@ -1,3 +1,4 @@
+import { Button, Heading, Input } from "@chakra-ui/react";
 import { useState } from "react";
 import { Layout } from "../../components/Layout";
 
@@ -56,7 +57,7 @@ const Sijoituslaskuri = () => {
         <div className={styles.laskuriRivi}>
           <div className={styles.label}>
             <label htmlFor="Alkupääoma">Alkupääoma</label>
-            <input
+            <Input
               type="text"
               id="Alkupääoma"
               value={startInvestment}
@@ -65,7 +66,7 @@ const Sijoituslaskuri = () => {
           </div>
           <div className={styles.label}>
             <label htmlFor="Kuukausisäästösumma">Kuukausisäästösumma</label>
-            <input
+            <Input
               type="text"
               id="Kuukausisäästösumma"
               value={monthlyInvestment}
@@ -76,7 +77,7 @@ const Sijoituslaskuri = () => {
         <div className={styles.laskuriRivi}>
           <div className={styles.label}>
             <label htmlFor="Sijoitusaika">Sijoitusaika (Vuosina)</label>
-            <input
+            <Input
               type="text"
               id="Sijoitusaika"
               value={years}
@@ -88,7 +89,7 @@ const Sijoituslaskuri = () => {
             <label htmlFor="Vuotuinen tuotto-odotus">
               Vuotuinen tuotto-odotus
             </label>
-            <input
+            <Input
               type="text"
               id="Vuotuinen tuotto-odotus"
               value={interest}
@@ -96,13 +97,14 @@ const Sijoituslaskuri = () => {
             />
           </div>
         </div>
-        <button onClick={() => onClick()}>Laske</button>
+        <Button onClick={() => onClick()}>Laske</Button>
       </div>
-      <h2>
+      <br />
+      <Heading size={"md"}>
         {answer
           ? "Sijoituksen arvo sijoitusajan päättyessä: " + answer + " €"
           : ""}
-      </h2>
+      </Heading>
     </Layout>
   );
 };
