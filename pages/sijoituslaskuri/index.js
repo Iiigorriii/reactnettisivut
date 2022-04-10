@@ -35,10 +35,10 @@ const Sijoituslaskuri = () => {
       )
     );
   };
-  const [startInvestment, setStartInvestment] = useState(0);
-  const [monthlyInvestment, setMonthlyInvestment] = useState(0);
-  const [years, setYears] = useState(0);
-  const [interest, setInterest] = useState(0);
+  const [startInvestment, setStartInvestment] = useState();
+  const [monthlyInvestment, setMonthlyInvestment] = useState();
+  const [years, setYears] = useState();
+  const [interest, setInterest] = useState();
   const [answer, setAnswer] = useState("");
 
   const onClick = () => {
