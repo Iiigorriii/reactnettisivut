@@ -1,9 +1,9 @@
 import { Layout } from "../../components/Layout";
 
-const memegenerator = () => (
+const oneRepMax = () => (
   <Layout>
     <h1> Tulossa pian!</h1>
   </Layout>
 );
 
-export default memegenerator;
+export default oneRepMax;
