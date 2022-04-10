@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AiOutlineAreaChart, AiFillHome } from "react-icons/ai";
-import { CgGym } from "react-icons/Cg";
+import { CgGym } from "react-icons/cg";
 
 import styles from "./Navbar.module.css";
 
