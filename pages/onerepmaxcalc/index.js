@@ -26,7 +26,7 @@ const OneRepMax = () => {
       <div className={styles.laskuri}>
         <div className={styles.label}>
           <label htmlFor="Lift">
-            <p className={styles.style1}>Lift:</p>
+            <p className={styles.style1}>Lift (Kg):</p>
           </label>
           <input
             type="number"
@@ -49,7 +49,7 @@ const OneRepMax = () => {
         <div>
           <button onClick={() => onClick()}>Count</button>
         </div>
-        <h2>{answer ? "One rep max: " + answer : ""}</h2>
+        <h2>{answer ? "One rep max: " + answer + " Kg" : ""}</h2>
       </div>
     </Layout>
   );
