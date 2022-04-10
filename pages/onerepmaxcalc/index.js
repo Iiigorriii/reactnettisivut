@@ -5,8 +5,8 @@ import { Layout } from "../../components/Layout";
 import styles from "../../styles/OneRepMax.module.css";
 
 const OneRepMax = () => {
-  const [Lift, setLift] = useState("0");
-  const [Repetitions, setRepetitions] = useState("0");
+  const [Lift, setLift] = useState("");
+  const [Repetitions, setRepetitions] = useState("");
   const [answer, setAnswer] = useState("");
 
   const calculate = () => {
