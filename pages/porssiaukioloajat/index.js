@@ -1,8 +1,15 @@
-import { Badge } from "@chakra-ui/react";
 import { Layout } from "../../components/Layout";
 import { porssilista } from "../../misc/porssilista";
-
-import styles from "../../styles/Porssiaukioloajat.module.css";
+import {
+  Table,
+  Tbody,
+  Thead,
+  Tr,
+  Th,
+  Td,
+  TableContainer,
+  Badge,
+} from "@chakra-ui/react";
 
 const Porssiaukioloajat = () => {
   const valmiit = [];
@@ -53,36 +60,47 @@ const Porssiaukioloajat = () => {
 
   return (
     <Layout>
-      <table className={styles.table}>
-        <thead className={styles.thead}>
-          <tr>
-            <th>Markkina</th>
-            <th>Auki</th>
-            <th>Kiinni</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody className={styles.tbody}>
-          {valmiit.map((valmis, i) => (
-            <tr key={i} className={styles.tr}>
-              <td className={styles.td}>{valmis.name}</td>
-              <td className={styles.td}>{valmis.auki}</td>
-              <td className={styles.td}>{valmis.kiinni}</td>
-              <td>
-                {valmis.isAuki ? (
-                  <Badge variant="subtle" colorScheme="green">
-                    Open
-                  </Badge>
-                ) : (
-                  <Badge variant="subtle" colorScheme="red">
-                    Closed
-                  </Badge>
-                )}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <TableContainer style={{ maxWidth: "600px" }}>
+        <Table>
+          <Thead>
+            <Tr
+              style={{
+                backgroundColor: "rgb(225, 225, 225)",
+              }}
+            >
+              <Th>Markkina</Th>
+              <Th>Auki</Th>
+              <Th>Kiinni</Th>
+              <Th>Status</Th>
+            </Tr>
+          </Thead>
+          <Tbody>
+            {valmiit.map((valmis, i) => (
+              <Tr
+                key={i}
+                style={{
+                  backgroundColor: i % 2 == 0 ? "rgb(245, 245, 245)" : "white",
+                }}
+              >
+                <Td>{valmis.name}</Td>
+                <Td>{valmis.auki}</Td>
+                <Td>{valmis.kiinni}</Td>
+                <Td>
+                  {valmis.isAuki ? (
+                    <Badge variant="subtle" colorScheme="green">
+                      Open
+                    </Badge>
+                  ) : (
+                    <Badge variant="subtle" colorScheme="red">
+                      Closed
+                    </Badge>
+                  )}
+                </Td>
+              </Tr>
+            ))}
+          </Tbody>
+        </Table>
+      </TableContainer>
     </Layout>
   );
 };
