@@ -42,7 +42,7 @@ const OneRepMax = () => {
 
     while (percent > 65) {
       const kerroin = Number("0." + percent);
-      const tempLift = (kerroin * result).toFixed(2);
+      const tempLift = Math.round(kerroin * result);
 
       reps = reps + 2;
 
