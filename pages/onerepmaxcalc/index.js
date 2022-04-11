@@ -117,6 +117,7 @@ const OneRepMax = () => {
               {!!valmisLista.length &&
                 valmisLista.map((item, i) => (
                   <Tr
+                    key={i}
                     style={{
                       backgroundColor:
                         i % 2 == 0 ? "rgb(245, 245, 245)" : "white",
