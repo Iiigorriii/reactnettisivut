@@ -1,4 +1,15 @@
-import { Button, Heading, Input } from "@chakra-ui/react";
+import {
+  Button,
+  Heading,
+  Input,
+  Table,
+  Tbody,
+  Thead,
+  Tr,
+  Th,
+  Td,
+  TableContainer,
+} from "@chakra-ui/react";
 import { useState } from "react";
 import { Layout } from "../../components/Layout";
 
@@ -8,6 +19,7 @@ const OneRepMax = () => {
   const [Lift, setLift] = useState("");
   const [Repetitions, setRepetitions] = useState("");
   const [answer, setAnswer] = useState("");
+  const [valmisLista, setValmisLista] = useState([]);
 
   const calculate = () => {
     return Number(Lift / (1.0278 - 0.0278 * Repetitions)).toFixed(1);
@@ -16,6 +28,35 @@ const OneRepMax = () => {
   const onClick = () => {
     const result = calculate();
     setAnswer(result);
+
+    let percent = 95;
+    let reps = 0;
+
+    const valmis = [
+      {
+        percent: 100,
+        liftWeight: Number(result),
+        reps: 1,
+      },
+    ];
+
+    while (percent > 65) {
+      const kerroin = Number("0." + percent);
+      const tempLift = (kerroin * result).toFixed(2);
+
+      reps = reps + 2;
+
+      valmis.push({
+        kerroin,
+        percent: percent,
+        liftWeight: tempLift,
+        reps: reps,
+      });
+
+      percent = percent - 5;
+    }
+
+    setValmisLista(valmis);
   };
 
   return (
@@ -55,6 +96,41 @@ const OneRepMax = () => {
       <Heading size={"md"}>
         {answer ? "One rep max: " + answer + " Kg" : ""}
       </Heading>
+      <br />
+      <br />
+
+      {!!valmisLista.length && (
+        <TableContainer style={{ maxWidth: "400px" }}>
+          <Table>
+            <Thead>
+              <Tr
+                style={{
+                  backgroundColor: "rgb(225, 225, 225)",
+                }}
+              >
+                <Th>% of 1RM</Th>
+                <Th>Weight</Th>
+                <Th>Reps of 1RM</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              {!!valmisLista.length &&
+                valmisLista.map((item, i) => (
+                  <Tr
+                    style={{
+                      backgroundColor:
+                        i % 2 == 0 ? "rgb(245, 245, 245)" : "white",
+                    }}
+                  >
+                    <Td>{item.percent + " %"}</Td>
+                    <Td>{item.liftWeight + " kg"}</Td>
+                    <Td>{item.reps}</Td>
+                  </Tr>
+                ))}
+            </Tbody>
+          </Table>
+        </TableContainer>
+      )}
     </Layout>
   );
 };
