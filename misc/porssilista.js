@@ -21,6 +21,13 @@ export const porssilista = [
     aukioloLoppuMinuutit: 25,
   },
   {
+    name: "Tanska(Kööpenhaminan pörssi)",
+    aukioloAlkuTunnit: 10,
+    aukioloAlkuMinuutit: 0,
+    aukioloLoppuTunnit: 18,
+    aukioloLoppuMinuutit: 0,
+  },
+  {
     name: "USA(Nasdag, Nyse)",
     aukioloAlkuTunnit: 16,
     aukioloAlkuMinuutit: 30,
