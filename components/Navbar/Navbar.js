@@ -77,11 +77,11 @@ export const Navbar = () => {
           </MenuItem>
           <MenuItem
             onClick={() => {
-              push("/mastermind");
+              push("/hangman");
             }}
           >
             <div className={styles.nappula}>
-              <GiBrain /> MasterMind
+              <GiBrain /> HangMan
             </div>
           </MenuItem>
         </MenuList>
