@@ -4,7 +4,7 @@ import React from "react";
 const Hangman = () => {
   return (
     <Layout>
-      <h1>Hangman game tulossa pian!</h1>
+      <p>Hangman game tulossa pian!</p>
     </Layout>
   );
 };
