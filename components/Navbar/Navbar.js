@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { AiOutlineAreaChart, AiFillHome } from "react-icons/ai";
 import { CgGym } from "react-icons/cg";
-import { GiBrain, GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu, GiSlipknot } from "react-icons/gi";
 
 import styles from "./Navbar.module.css";
 
@@ -81,7 +81,7 @@ export const Navbar = () => {
             }}
           >
             <div className={styles.nappula}>
-              <GiBrain /> HangMan
+              <GiSlipknot /> Hangman
             </div>
           </MenuItem>
         </MenuList>
