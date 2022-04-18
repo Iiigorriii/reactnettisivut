@@ -6,27 +6,27 @@ import styles from "../../styles/MasterMind.module.css";
 const MasterMind = () => {
   return (
     <Layout>
-      <div class="content">
-        <div class="fullBoard">
-          <div class="board"></div>
-          <div class="pegs"></div>
+      <div className={styles.content}>
+        <div className={styles.fullBoard}>
+          <div className={styles.board}></div>
+          <div className={styles.begs}></div>
         </div>
-        <div class="other">
-          <div class="code">
-            <div class="secretColor" id="secretColor1"></div>
-            <div class="secretColor" id="secretColor2"></div>
-            <div class="secretColor" id="secretColor3"></div>
-            <div class="secretColor" id="secretColor4"></div>
+        <div className={styles.other}>
+          <div className={styles.code}>
+            <div className={styles.secretColor} id="secretColor1"></div>
+            <div className={styles.secretColor} id="secretColor2"></div>
+            <div className={styles.secretColor} id="secretColor3"></div>
+            <div className={styles.secretColor} id="secretColor4"></div>
           </div>
-          <div class="colorBoard">
-            <div class="color" id="blue"></div>
-            <div class="color" id="green"></div>
-            <div class="color" id="red"></div>
-            <div class="color" id="yellow"></div>
-            <div class="color" id="orange"></div>
+          <div className="colorBoard">
+            <div className={styles.color} id="blue"></div>
+            <div className={styles.color} id="green"></div>
+            <div className={styles.color} id="red"></div>
+            <div className={styles.color} id="yellow"></div>
+            <div className={styles.color} id="orange"></div>
           </div>
-          <div class="currentColor"></div>
-          <div class="submit">Submit</div>
+          <div className={styles.currentColor}></div>
+          <div className={styles.submit}>Submit</div>
         </div>
       </div>
     </Layout>
