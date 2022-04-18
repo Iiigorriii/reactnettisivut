@@ -1,14 +1,10 @@
 import React from "react";
-import { Layout } from "../../components/Layout";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-import styles from "../../styles/HangMan.module.css";
-
-const HangMan = () => {
-  return (
-    <Layout>
-      <h1>Tulossa pian!</h1>
-    </Layout>
-  );
-};
-
-export default HangMan;
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
