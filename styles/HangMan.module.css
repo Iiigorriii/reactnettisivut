@@ -1,10 +1,10 @@
 
 
-h1 {
+.h1 {
     margin: 20px 0 0;
   }
   
-  .gameContainer {
+.gameContainer {
     padding: 20px 30px;
     position: relative;
     margin: auto;
@@ -12,18 +12,18 @@ h1 {
     width: 450px;
   }
   
-  .figureContainer {
+.figureContainer {
     fill: transparent;
     stroke: #fff;
     stroke-width: 4px;
     stroke-linecap: round;
   }
   
-  .figurePart {
+.figurePart {
     display: none;
   }
   
-  .wronglettersContainer {
+.wronglettersContainer {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -32,15 +32,15 @@ h1 {
     text-align: right;
   }
   
-  .wronglettersContainer p {
+.wronglettersContainer p {
     margin: 0 0 5px;
   }
   
-  .wronglettersContainer span {
+.wronglettersContainer span {
     font-size: 24px;
   }
   
-  .word {
+.word {
     display: flex;
     position: absolute;
     bottom: 10px;
@@ -48,7 +48,7 @@ h1 {
     transform: translateX(-50%);
   }
   
-  .letter {
+.letter {
     border-bottom: 3px solid #2980b9;
     display: inline-flex;
     font-size: 30px;
@@ -59,7 +59,7 @@ h1 {
     width: 20px;
   }
   
-  .popupContainer {
+.popupContainer {
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
@@ -72,7 +72,7 @@ h1 {
     justify-content: center;
   }
   
-  .popup {
+.popup {
     background: #2980b9;
     border-radius: 5px;
     box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
@@ -80,7 +80,7 @@ h1 {
     text-align: center;
   }
   
-  .popup button {
+.popup button {
     cursor: pointer;
     background-color: #fff;
     color: #2980b9;
@@ -90,15 +90,15 @@ h1 {
     font-size: 16px;
   }
   
-  .popup button:active {
+.popup button:active {
     transform: scale(0.98);
   }
   
-  .popup button:focus {
+.popup button:focus {
     outline: 0;
   }
   
-  .notificationContainer {
+.notificationContainer {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px 10px 0 0;
     padding: 15px 20px;
@@ -107,10 +107,10 @@ h1 {
     transition: transform 0.3s ease-in-out;
   }
   
-  .notificationContainer p {
+.notificationContainer p {
     margin: 0;
   }
   
-  .notificationContainer.show {
+.notificationContainer.show {
     transform: translateY(-50px);
   }
