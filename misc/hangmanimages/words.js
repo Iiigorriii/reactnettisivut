@@ -1608,6 +1608,7 @@ export const ENGLISH_WORDS = [
   "manual",
   "pistol",
   "naval",
+  "007",
 ];
 
 function randomWord() {
