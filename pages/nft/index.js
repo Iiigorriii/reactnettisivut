@@ -5,12 +5,12 @@ import { Layout } from "../../components/Layout";
 // import React, { useMemo } from "react";
 
 const Nft = () => {
-  //   const images = useMemo(() => ["Abstract.jpg", "CryptoEagle.jpg"], []);
+  // const images = useMemo(() => ["Abstract.jpg", "CryptoEagle.jpg"], []);
 
-  //   const captions = useMemo(
-  //     () => ["caption for Abstract.jpg", "caption for CryptoEagle.jpg"],
-  //     []
-  //   );
+  // const captions = useMemo(
+  //   () => ["caption for Abstract.jpg", "caption for CryptoEagle.jpg"],
+  //   []
+  // );
 
   return (
     <Layout>
