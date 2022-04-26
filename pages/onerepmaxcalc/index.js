@@ -9,6 +9,7 @@ import {
   Th,
   Td,
   TableContainer,
+  Text,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { Layout } from "../../components/Layout";
@@ -134,6 +135,8 @@ const OneRepMax = () => {
           </Table>
         </TableContainer>
       )}
+      <Text fontSize="3xl">Formula:</Text>
+      <Text fontSize="2xl">weight / ( 1.0278 – 0.0278 × reps )</Text>
     </Layout>
   );
 };
