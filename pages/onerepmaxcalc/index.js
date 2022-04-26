@@ -64,10 +64,10 @@ const OneRepMax = () => {
     <Layout>
       <Heading>One rep max calculator</Heading>
       <br />
-      <p>
+      <Text fontSize="md">
         Calculate your one-rep max (1RM) for any lift. Your one-rep max is the
         max weight you can lift for a single repetition for a given exercise.
-      </p>
+      </Text>
       <div className={styles.laskuri}>
         <div className={styles.label}>
           <label htmlFor="Lift">
@@ -135,8 +135,8 @@ const OneRepMax = () => {
           </Table>
         </TableContainer>
       )}
-      <Text fontSize="3xl">Formula:</Text>
-      <Text fontSize="2xl">weight / ( 1.0278 – 0.0278 × reps )</Text>
+      <Text fontSize="2xl">Formula:</Text>
+      <Text fontSize="1xl">weight / ( 1.0278 – 0.0278 × reps )</Text>
     </Layout>
   );
 };
