@@ -10,6 +10,7 @@ import {
   TableContainer,
   Badge,
   Heading,
+  Text,
 } from "@chakra-ui/react";
 
 const Porssiaukioloajat = () => {
@@ -103,7 +104,9 @@ const Porssiaukioloajat = () => {
             ))}
           </Tbody>
         </Table>
-        <p>*Poikkeuksellisia aukioloaikoja ei ole huomioitu</p>
+        <Text fontSize="1xl">
+          *Poikkeuksellisia aukioloaikoja ei ole huomioitu
+        </Text>
       </TableContainer>
     </Layout>
   );
