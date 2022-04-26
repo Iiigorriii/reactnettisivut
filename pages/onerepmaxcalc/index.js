@@ -61,6 +61,8 @@ const OneRepMax = () => {
 
   return (
     <Layout>
+      <Heading>One rep max calculator</Heading>
+      <br />
       <p>
         Calculate your one-rep max (1RM) for any lift. Your one-rep max is the
         max weight you can lift for a single repetition for a given exercise.
