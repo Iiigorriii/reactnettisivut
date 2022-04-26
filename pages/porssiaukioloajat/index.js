@@ -105,7 +105,7 @@ const Porssiaukioloajat = () => {
           </Tbody>
         </Table>
         <Text fontSize="1xl">
-          *Poikkeuksellisia aukioloaikoja ei ole huomioitu
+          *Poikkeuksellisia aukioloaikoja ei ole huomioitu.
         </Text>
       </TableContainer>
     </Layout>
