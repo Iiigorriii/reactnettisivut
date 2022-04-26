@@ -1,7 +1,8 @@
-.mainFooter {
+.mainfooter {
   padding: 15px;
   text-align: center;
   background-color: #2D3748;
   color: #718096;
   outline: none;
+  bottom: 0;
 }

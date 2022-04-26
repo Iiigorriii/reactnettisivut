@@ -1,8 +1,8 @@
-import { Footer } from "@chakra-ui/react";
+import { ModalFooter } from "@chakra-ui/react";
 import styles from "./Footer.module.css";
 
-export const Footer = () => (
-  <header className={styles.mainfooter}>
-    <Footer style={{ padding: "1rem" }}>VeikkaP</Footer>
-  </header>
-);
+export const Footer = () => {
+  <ModalFooter className={styles.mainfooter}>
+    <footer style={{ padding: "1rem" }}>VeikkaP</footer>
+  </ModalFooter>;
+};
