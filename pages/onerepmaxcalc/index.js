@@ -136,7 +136,7 @@ const OneRepMax = () => {
         </TableContainer>
       )}
       <Text fontSize="2xl">Formula:</Text>
-      <Text fontSize="1xl">weight / ( 1.0278 – 0.0278 × reps )</Text>
+      <Text fontSize="1xl">weight (kg) / ( 1.0278 – 0.0278 × reps )</Text>
     </Layout>
   );
 };
