@@ -61,7 +61,7 @@ const Porssiaukioloajat = () => {
 
   return (
     <Layout>
-      <Heading>Pörssien aukioloajat:</Heading>
+      <Heading>Pörssien aukioloajat</Heading>
       <br />
       <TableContainer style={{ maxWidth: "600px" }}>
         <Table>
