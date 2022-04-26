@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { AiOutlineAreaChart, AiFillHome } from "react-icons/ai";
+import { AiOutlineAreaChart, AiFillHome, AiFillPicture } from "react-icons/ai";
 import { CgGym } from "react-icons/cg";
 import { GiHamburgerMenu, GiSlipknot } from "react-icons/gi";
 
@@ -73,6 +73,15 @@ export const Navbar = () => {
           >
             <div className={styles.nappula}>
               <CgGym /> One Rep Max
+            </div>
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              push("/nft");
+            }}
+          >
+            <div className={styles.nappula}>
+              <AiFillPicture /> Nft
             </div>
           </MenuItem>
           <MenuItem
