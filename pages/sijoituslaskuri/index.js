@@ -53,6 +53,8 @@ const Sijoituslaskuri = () => {
 
   return (
     <Layout>
+      <Heading>Sijoituslaskuri:</Heading>
+      <br />
       <div className={styles.laskuri}>
         <div className={styles.laskuriRivi}>
           <div className={styles.label}>
