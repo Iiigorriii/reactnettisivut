@@ -9,6 +9,7 @@ import {
   Td,
   TableContainer,
   Badge,
+  Heading,
 } from "@chakra-ui/react";
 
 const Porssiaukioloajat = () => {
@@ -60,7 +61,8 @@ const Porssiaukioloajat = () => {
 
   return (
     <Layout>
-      <h1>Testi</h1>
+      <Heading>Pörssien aukioloajat:</Heading>
+      <br />
       <TableContainer style={{ maxWidth: "600px" }}>
         <Table>
           <Thead>
@@ -101,6 +103,7 @@ const Porssiaukioloajat = () => {
             ))}
           </Tbody>
         </Table>
+        <p>*Poikkeuksellisia aukioloaikoja ei ole huomioitu</p>
       </TableContainer>
     </Layout>
   );
