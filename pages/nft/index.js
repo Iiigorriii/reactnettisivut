@@ -1,5 +1,4 @@
 import { Heading } from "@chakra-ui/react";
-import { Header } from "../../components/Header/Header";
 import { Layout } from "../../components/Layout";
 import styles from "../../styles/Nft.module.css";
 import { Tooltip } from "@chakra-ui/react";
@@ -7,7 +6,7 @@ import { Tooltip } from "@chakra-ui/react";
 const Nft = ({ src, alt }) => (
   <div>
     <Tooltip label={alt} closeDelay={800} placement="top">
-      <img src={src} alt={alt} />
+      <img src={src} alt={alt} style={{ height: "auto", width: "600px" }} />
     </Tooltip>
   </div>
 );
