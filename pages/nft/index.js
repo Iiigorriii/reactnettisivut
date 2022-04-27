@@ -41,77 +41,27 @@ const Nft = ({ video, src, alt }) => (
   <div>
     <Tooltip label={alt} closeDelay={800} placement="top">
       {video ? (
-        <video controls autoPlay src={src} alt={alt} className={styles.nft} />
+        <video controls autoPlay loop muted src={src} alt={alt} className={styles.nft} />
       ) : (
         <img src={src} alt={alt} className={styles.nft} />
       )}
     </Tooltip>
   </div>
 );
-
 const NftPage = () => {
   return (
     <Layout>
       <Heading>NFT COLLECTION</Heading>
-
       <div className={styles.gallery}>
-        {/* 
-        {images.map((url, text) => (
-          <Nft src={url} alt={text} />
+        {images.map(({ url, text }, index) => (
+          <Nft key={index} src={url} alt={text} />
         ))}
-      </div>
-      <div className={styles.gallery}>
-        {videos.map((url, text) => (
-          <Nft src={url} alt={text} />
-        ))} */}
 
-        <img
-          src="/nftimages/abstract.jpg"
-          alt="Abstract"
-          className={styles.nft}
-        />
-        <img
-          src="/nftimages/cryptoEagle.jpg"
-          alt="CryptoEagle168"
-          className={styles.nft}
-        />
-        <img
-          src="/nftimages/treeApples.jpg"
-          alt="Three apples. Edition 05"
-          className={styles.nft}
-        />
-
-        <video
-          src="https://public.nftstatic.com/static/nft/res/08c761d6c95a4e2bb32d18bed4e1d1b1.mp4"
-          alt="Satoshi Duck"
-          controls
-          autoPlay
-          className={styles.nft}
-        />
-        <video
-          src="https://public.nftstatic.com/static/nft/res/b5aca75f909b46c3b45053ba4ed5a9ce.mp4"
-          alt="City Duck"
-          controls
-          autoPlay
-          className={styles.nft}
-        />
-        <video
-          src="https://public.nftstatic.com/static/nft/res/2892eee0726842b6af17307d7d5b5f7b.mp4"
-          alt="Grass Duck"
-          controls
-          autoPlay
-          className={styles.nft}
-        />
-        <video
-          src="https://openseauserdata.com/files/3462a63a03d3cc8ac0f9adc63436c439.mp4"
-          alt="Kleoverse Genesis #39"
-          controls
-          autoPlay
-          className={styles.nft}
-        />
+        {videos.map(({ url, text }, index) => (
+          <Nft key={index} src={url} alt={text} video />
+        ))}
       </div>
     </Layout>
   );
 };
-
 export default NftPage;
