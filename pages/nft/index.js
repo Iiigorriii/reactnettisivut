@@ -8,9 +8,7 @@ const Nft = () => {
     <Layout>
       <h1>testi</h1>
       <div class="gallery">
-        <a target="_blank" href="Abstracts.jpg">
-          <Img src="Abstracts.jpg" alt="Abstract" width="600" height="400" />
-        </a>
+        <Img src="Abstracts.jpg" alt="Abstract" width="600" height="400" />
         <div class="desc"></div>
       </div>
     </Layout>
