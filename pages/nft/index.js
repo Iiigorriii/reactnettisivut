@@ -1,16 +1,30 @@
-import { Img } from "@chakra-ui/react";
+import { Heading, Img } from "@chakra-ui/react";
+import { Header } from "../../components/Header/Header";
 import { Layout } from "../../components/Layout";
 import styles from "../../styles/Nft.module.css";
 
 const Nft = () => {
   return (
     <Layout>
-      <h1>testi</h1>
-      <Img src="/nftimages/abstract.jpg" alt="Abstract" />
-      {/* <div class="gallery">
-        <Img src="Abstracts.jpg" alt="Abstract" width="600" height="400" />
-        <div class="desc"></div> 
-      </div>*/}
+      <Heading>NFT</Heading>
+      <div className="gallery">
+        <Img
+          src="/nftimages/abstract.jpg"
+          alt="Abstract"
+          width="500"
+          height="300"
+        />
+        <div className="desc"></div>
+      </div>
+      <div className="gallery">
+        <Img
+          src="/nftimages/cryptoEagle.jpg"
+          alt="CryptoEagle168"
+          width="600"
+          height="400"
+        />
+        <div className="desc"></div>
+      </div>
     </Layout>
   );
 };
