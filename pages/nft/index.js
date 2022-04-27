@@ -41,7 +41,7 @@ const Nft = ({ video, src, alt }) => (
   <div>
     <Tooltip label={alt} closeDelay={800} placement="top">
       {video ? (
-        <video controls autoPlay loop src={src} alt={alt} className={styles.nft} />
+        <video controls autoPlay loop muted src={src} alt={alt} className={styles.nft} />
       ) : (
         <img src={src} alt={alt} className={styles.nft} />
       )}
