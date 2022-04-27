@@ -8,7 +8,7 @@ const Nft = () => {
   return (
     <Layout>
       <Heading>NFT</Heading>
-      <div className="gallery">
+      <div className={styles.gallery}>
         <Tooltip
           label="Abstract"
           aria-label="A tooltip"
