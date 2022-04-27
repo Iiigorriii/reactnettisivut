@@ -8,22 +8,12 @@ const Nft = () => {
     <Layout>
       <Heading>NFT</Heading>
       <div className="gallery">
-        <Img
-          src="/nftimages/abstract.jpg"
-          alt="Abstract"
-          width="600"
-          height="400"
-        />
-        <div className="desc">Abstract</div>
-      </div>
-      <div className="gallery">
+        <Img src="/nftimages/abstract.jpg" alt="Abstract" width="600" />
         <Img
           src="/nftimages/cryptoEagle.jpg"
           alt="CryptoEagle168"
           width="600"
-          height="400"
         />
-        <div className="desc">CryptoEagle168</div>
       </div>
     </Layout>
   );
