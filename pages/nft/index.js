@@ -11,8 +11,8 @@ const Nft = () => {
         <Img
           src="/nftimages/abstract.jpg"
           alt="Abstract"
-          width="500"
-          height="300"
+          width="600"
+          height="400"
         />
         <div className="desc"></div>
       </div>
