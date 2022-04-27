@@ -4,34 +4,21 @@ import { Layout } from "../../components/Layout";
 import styles from "../../styles/Nft.module.css";
 import { Tooltip } from "@chakra-ui/react";
 
-const Image = ({ children }) => <div>{children}</div>;
+const Image = ({ src, alt }) => (
+  <div>
+    <Tooltip label={alt} closeDelay={500} placement="top">
+      <img src={src} alt={alt} />
+    </Tooltip>
+  </div>
+);
 
 const Nft = () => {
   return (
     <Layout>
       <Heading>NFT</Heading>
       <div className={styles.gallery}>
-        <Tooltip
-          label="Abstract"
-          aria-label="A tooltip"
-          closeDelay={500}
-          placement="top"
-        >
-          <Image>
-            <img src="/nftimages/abstract.jpg" alt="Abstract" />
-          </Image>
-        </Tooltip>
-
-        <Tooltip
-          label="CryptoEagle168"
-          aria-label="A tooltip"
-          closeDelay={500}
-          placement="top"
-        >
-          <Image>
-            <img src="/nftimages/cryptoEagle.jpg" alt="CryptoEagle168" />
-          </Image>
-        </Tooltip>
+        <Image src="/nftimages/abstract.jpg" alt="Abstract" />
+        <Image src="/nftimages/cryptoEagle.jpg" alt="CryptoEagle168" />
       </div>
     </Layout>
   );
