@@ -42,7 +42,7 @@ const Nft = ({ video, src, alt }) => (
     <Tooltip label={alt} closeDelay={800} placement="top">
       {video ? (
         <video
-          controls
+          // controls
           autoPlay
           loop
           muted
