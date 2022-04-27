@@ -1,23 +1,18 @@
-import { Heading } from "@chakra-ui/react";
+import { Img } from "@chakra-ui/react";
 import { Layout } from "../../components/Layout";
-// import { ChakraProvider } from "@chakra-ui/react";
-// import { ImageSlide } from "react-chakra-slide-show";
-// import React, { useMemo } from "react";
+import Abstract from "../../misc/nftimages/Abstract.jpg";
+import styles from "../../styles/Nft.module.css";
 
 const Nft = () => {
-  // const images = useMemo(() => ["Abstract.jpg", "CryptoEagle.jpg"], []);
-
-  // const captions = useMemo(
-  //   () => ["caption for Abstract.jpg", "caption for CryptoEagle.jpg"],
-  //   []
-  // );
-
   return (
     <Layout>
-      <Heading>NFT</Heading>
-      {/* <ChakraProvider>
-        <ImageSlide images={images} captions={captions} />
-      </ChakraProvider> */}
+      <h1>testi</h1>
+      <div class="gallery">
+        <a target="_blank" href="Abstracts.jpg">
+          <Img src="Abstracts.jpg" alt="Abstract" width="600" height="400" />
+        </a>
+        <div class="desc"></div>
+      </div>
     </Layout>
   );
 };
