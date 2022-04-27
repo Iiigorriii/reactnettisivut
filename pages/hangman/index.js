@@ -17,6 +17,8 @@ const Hangman = () => {
   return (
     <Layout>
       <h1>Hangman game tulossa joskus:)</h1>
+      <br />
+      <img src="/hangman/hangman.jpg" alt="hangman" />
     </Layout>
   );
 };
