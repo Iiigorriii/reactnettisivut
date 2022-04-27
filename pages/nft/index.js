@@ -14,7 +14,7 @@ const Nft = () => {
           width="600"
           height="400"
         />
-        <div className="desc"></div>
+        <div className="desc">Abstract</div>
       </div>
       <div className="gallery">
         <Img
@@ -23,7 +23,7 @@ const Nft = () => {
           width="600"
           height="400"
         />
-        <div className="desc"></div>
+        <div className="desc">CryptoEagle168</div>
       </div>
     </Layout>
   );
