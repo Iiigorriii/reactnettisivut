@@ -1,4 +1,4 @@
-import { Heading, Img } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
 import { Header } from "../../components/Header/Header";
 import { Layout } from "../../components/Layout";
 import styles from "../../styles/Nft.module.css";
@@ -15,7 +15,9 @@ const Nft = () => {
           closeDelay={500}
           placement="top"
         >
-          <Img src="/nftimages/abstract.jpg" alt="Abstract" />
+          <div>
+            <img src="/nftimages/abstract.jpg" alt="Abstract" />
+          </div>
         </Tooltip>
 
         <Tooltip
@@ -24,7 +26,9 @@ const Nft = () => {
           closeDelay={500}
           placement="top"
         >
-          <Img src="/nftimages/cryptoEagle.jpg" alt="CryptoEagle168" />
+          <div>
+            <img src="/nftimages/cryptoEagle.jpg" alt="CryptoEagle168" />
+          </div>
         </Tooltip>
       </div>
     </Layout>
