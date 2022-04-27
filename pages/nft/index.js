@@ -7,10 +7,11 @@ const Nft = () => {
   return (
     <Layout>
       <h1>testi</h1>
-      <div class="gallery">
+      <Img src={Abstract} alt="Abstract" />
+      {/* <div class="gallery">
         <Img src="Abstracts.jpg" alt="Abstract" width="600" height="400" />
-        <div class="desc"></div>
-      </div>
+        <div class="desc"></div> 
+      </div>*/}
     </Layout>
   );
 };
