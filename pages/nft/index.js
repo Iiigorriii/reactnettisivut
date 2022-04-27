@@ -19,6 +19,7 @@ const NftPage = () => {
       <div className={styles.gallery}>
         <Nft src="/nftimages/abstract.jpg" alt="Abstract" />
         <Nft src="/nftimages/cryptoEagle.jpg" alt="CryptoEagle168" />
+        <Nft src="/nftimages/treeApples.jpg" alt="Three apples. Edition 05" />
       </div>
     </Layout>
   );
