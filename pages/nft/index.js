@@ -15,7 +15,7 @@ const Nft = () => {
           closeDelay={500}
           placement="top"
         >
-          <Img src="/nftimages/abstract.jpg" alt="Abstract" width="600" />
+          <Img src="/nftimages/abstract.jpg" alt="Abstract" />
         </Tooltip>
 
         <Tooltip
@@ -24,11 +24,7 @@ const Nft = () => {
           closeDelay={500}
           placement="top"
         >
-          <Img
-            src="/nftimages/cryptoEagle.jpg"
-            alt="CryptoEagle168"
-            width="600"
-          />
+          <Img src="/nftimages/cryptoEagle.jpg" alt="CryptoEagle168" />
         </Tooltip>
       </div>
     </Layout>
