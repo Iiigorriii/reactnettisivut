@@ -53,12 +53,12 @@ const NftPage = () => {
     <Layout>
       <Heading>NFT COLLECTION</Heading>
       <div className={styles.gallery}>
-        {images.map(({ url, text }) => (
-          <Nft src={url} alt={text} />
+        {images.map(({ url, text }, index) => (
+          <Nft key={index} src={url} alt={text} />
         ))}
 
-        {videos.map(({ url, text }) => (
-          <Nft src={url} alt={text} video />
+        {videos.map(({ url, text }, index) => (
+          <Nft key={index} src={url} alt={text} video />
         ))}
       </div>
     </Layout>
