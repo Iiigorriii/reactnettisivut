@@ -6,7 +6,7 @@ import { Tooltip } from "@chakra-ui/react";
 
 const Nft = ({ src, alt }) => (
   <div>
-    <Tooltip label={alt} closeDelay={500} placement="top">
+    <Tooltip label={alt} closeDelay={800} placement="top">
       <img src={src} alt={alt} />
     </Tooltip>
   </div>
