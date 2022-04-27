@@ -4,7 +4,7 @@ import { Layout } from "../../components/Layout";
 import styles from "../../styles/Nft.module.css";
 import { Tooltip } from "@chakra-ui/react";
 
-const Image = ({ src, alt }) => (
+const Nft = ({ src, alt }) => (
   <div>
     <Tooltip label={alt} closeDelay={500} placement="top">
       <img src={src} alt={alt} />
@@ -12,16 +12,16 @@ const Image = ({ src, alt }) => (
   </div>
 );
 
-const Nft = () => {
+const NftPage = () => {
   return (
     <Layout>
       <Heading>NFT</Heading>
       <div className={styles.gallery}>
-        <Image src="/nftimages/abstract.jpg" alt="Abstract" />
-        <Image src="/nftimages/cryptoEagle.jpg" alt="CryptoEagle168" />
+        <Nft src="/nftimages/abstract.jpg" alt="Abstract" />
+        <Nft src="/nftimages/cryptoEagle.jpg" alt="CryptoEagle168" />
       </div>
     </Layout>
   );
 };
 
-export default Nft;
+export default NftPage;
