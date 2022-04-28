@@ -10,7 +10,7 @@ const images = [
   },
   {
     url: "/nftimages/cryptoEagle.jpg",
-    text: "CryptoEagle168",
+    text: "Crypto Eagle #168",
   },
   {
     url: "/nftimages/treeApples.jpg",
