@@ -22,23 +22,23 @@ import { Tooltip } from "@chakra-ui/react";
 const images = [
   {
     url: "/ylioppilaskuvat/ylioppilas1.jpeg",
-    text: "KIITOS",
+    text: "Kiitos",
   },
   {
     url: "/ylioppilaskuvat/ylioppilas3.jpeg",
-    text: "KIITOS",
-  },
-  {
-    url: "/ylioppilaskuvat/ylioppilas2.jpeg",
-    text: "KIITOS",
+    text: "Kiitos",
   },
 ];
 
 const videos = [
-  // {
-  //   url: "https://public.nftstatic.com/static/nft/res/08c761d6c95a4e2bb32d18bed4e1d1b1.mp4",
-  //   text: "Satoshi Duck",
-  // },
+  {
+    url: "/ylioppilaskuvat/gif1.gif",
+    text: "Kiitos",
+  },
+  {
+    url: "/ylioppilaskuvat/gif2.gif",
+    text: "Kiitos",
+  },
 ];
 
 const Ylioppilas = ({ video, src, alt }) => (
