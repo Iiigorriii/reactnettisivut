@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { AiOutlineAreaChart, AiFillHome, AiFillPicture } from "react-icons/ai";
 import { CgGym } from "react-icons/cg";
-import { GiHamburgerMenu, GiSlipknot } from "react-icons/gi";
+import { GiHamburgerMenu, GiImperialCrown, GiSlipknot } from "react-icons/gi";
 
 import styles from "./Navbar.module.css";
 
@@ -50,6 +50,15 @@ export const Navbar = () => {
         <MenuList>
           <MenuItem
             onClick={() => {
+              push("/ylioppilas");
+            }}
+          >
+            <div className={styles.nappula}>
+              <GiImperialCrown /> Ylioppilaskuva
+            </div>
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
               push("/sijoituslaskuri");
             }}
           >
@@ -84,7 +93,7 @@ export const Navbar = () => {
               <AiFillPicture /> Nft
             </div>
           </MenuItem>
-          <MenuItem
+          {/* <MenuItem
             onClick={() => {
               push("/hangman");
             }}
@@ -92,7 +101,7 @@ export const Navbar = () => {
             <div className={styles.nappula}>
               <GiSlipknot /> Hangman
             </div>
-          </MenuItem>
+          </MenuItem> */}
         </MenuList>
       </Menu>
     </nav>
