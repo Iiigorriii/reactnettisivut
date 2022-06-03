@@ -22,15 +22,15 @@ import { Tooltip } from "@chakra-ui/react";
 const images = [
   {
     url: "/ylioppilaskuvat/ylioppilas1.jpeg",
-    text: "KITOS",
+    text: "KIITOS",
   },
   {
     url: "/ylioppilaskuvat/ylioppilas3.jpeg",
-    text: "KITOS",
+    text: "KIITOS",
   },
   {
     url: "/ylioppilaskuvat/ylioppilas2.jpeg",
-    text: "KITOS",
+    text: "KIITOS",
   },
 ];
 
