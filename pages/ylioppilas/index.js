@@ -25,11 +25,11 @@ const images = [
     text: "KITOS",
   },
   {
-    url: "/ylioppilaskuvat/ylioppilas2.jpeg",
+    url: "/ylioppilaskuvat/ylioppilas3.jpeg",
     text: "KITOS",
   },
   {
-    url: "/ylioppilaskuvat/ylioppilas3.jpeg",
+    url: "/ylioppilaskuvat/ylioppilas2.jpeg",
     text: "KITOS",
   },
 ];
