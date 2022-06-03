@@ -1,0 +1,10 @@
+.gallery {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+}
+
+.nft {
+  height: auto;
+  width: 600px;
+}
