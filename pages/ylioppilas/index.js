@@ -63,7 +63,7 @@ const Ylioppilas = ({ video, src, alt }) => (
 const YlioppilasPage = () => {
   return (
     <Layout>
-      <Heading>Ylioppilas</Heading>
+      <Heading>Ylioppilas 2022</Heading>
       <br />
       <div className={styles.gallery}>
         {images.map(({ url, text }, index) => (
