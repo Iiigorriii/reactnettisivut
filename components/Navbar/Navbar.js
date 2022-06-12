@@ -48,7 +48,7 @@ export const Navbar = () => {
           </div>
         </MenuButton>
         <MenuList>
-          <MenuItem
+          {/* <MenuItem
             onClick={() => {
               push("/ylioppilas");
             }}
@@ -56,7 +56,7 @@ export const Navbar = () => {
             <div className={styles.nappula}>
               <GiImperialCrown /> Ylioppilaskuva
             </div>
-          </MenuItem>
+          </MenuItem> */}
           <MenuItem
             onClick={() => {
               push("/sijoituslaskuri");
