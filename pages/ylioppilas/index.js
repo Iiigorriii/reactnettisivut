@@ -1,19 +1,3 @@
-// import { Heading } from "@chakra-ui/react";
-// import { Layout } from "../../components/Layout";
-// import styles from "../../styles/Ylioppilas.module.css";
-
-// const Ylioppilas = () => (
-//   <Layout>
-//     <Heading>Ylioppilas vm2022</Heading>
-//     <br />
-//     <img src="/ylioppilasimages/yolakkitesti.jpg" alt="ylioppilaslakkitesti" />
-//     <img src="/ylioppilasimages/yokuva1.jpg" alt="ylioppilaslakkitesti" />
-//     <img src="/ylioppilasimages/yokuva2.jpg" alt="ylioppilaslakkitesti" />
-//   </Layout>
-// );
-
-// export default Ylioppilas;
-
 import { Heading } from "@chakra-ui/react";
 import { Layout } from "../../components/Layout";
 import styles from "../../styles/Ylioppilas.module.css";
