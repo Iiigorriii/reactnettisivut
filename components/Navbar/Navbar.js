@@ -48,15 +48,6 @@ export const Navbar = () => {
           </div>
         </MenuButton>
         <MenuList>
-          {/* <MenuItem
-            onClick={() => {
-              push("/ylioppilas");
-            }}
-          >
-            <div className={styles.nappula}>
-              <GiImperialCrown /> Ylioppilaskuva
-            </div>
-          </MenuItem> */}
           <MenuItem
             onClick={() => {
               push("/sijoituslaskuri");
@@ -93,15 +84,6 @@ export const Navbar = () => {
               <AiFillPicture /> Nft
             </div>
           </MenuItem>
-          {/* <MenuItem
-            onClick={() => {
-              push("/hangman");
-            }}
-          >
-            <div className={styles.nappula}>
-              <GiSlipknot /> Hangman
-            </div>
-          </MenuItem> */}
         </MenuList>
       </Menu>
     </nav>
