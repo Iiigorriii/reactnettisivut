@@ -8,7 +8,7 @@ const Home = () => (
       target="_blank"
       rel="noreferrer"
     >
-      GitHub
+      GitHubbb
     </a>
   </Layout>
 );
