@@ -11,6 +11,7 @@ const Home = () => (
       GitHub
     </a>
   <text>Test</text>
+ {/* Hi I am Veikka from Finland and this is my coding project. The goal is to make something great! */}
   </Layout>
 );
 
