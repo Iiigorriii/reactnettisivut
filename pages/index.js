@@ -10,6 +10,7 @@ const Home = () => (
     >
       GitHub
     </a>
+  <text>Test</text>
   </Layout>
 );
 
