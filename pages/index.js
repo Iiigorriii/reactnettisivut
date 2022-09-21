@@ -9,7 +9,6 @@ const Home = () => (
       rel="noreferrer"
     >
       GitHub
-      <text>Test</text>
     </a>
   
  {/* Hi I am Veikka from Finland and this is my coding project. The goal is to make something great! */}
