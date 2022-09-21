@@ -8,7 +8,7 @@ const Home = () => (
       target="_blank"
       rel="noreferrer"
     >
-      GitHub
+      GitHubbb
     </a>
   
  {/* Hi I am Veikka from Finland and this is my coding project. The goal is to make something great! */}
