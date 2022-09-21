@@ -3,8 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "Veikka P"
-    },
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "developer": [
+    {
+      "name": "Veikka P",
+      "email": "Veikka.puolitaival@gmail.com",
+      "url": "https://github.com/veikka-p"
+    }
+  ],
   "contributors": [
     {
       "name": "Veeti K",
