@@ -5,48 +5,18 @@ import { Layout } from "../../components/Layout";
 import styles from "../../styles/PolttoaineLaskuri.module.css";
 
 const Polttoainelaskuri = () => {
-  const calculateTotal = (
-    kilometrit,
-    keskikulutus,
-    litrahinta,
-    maksajat
-  ) => {
-    const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
-      if (kilometrit < 1) {
-        return Kilometrit;
-      }
-      if (kilometrit === 1) {
-        return (kilometrit + (keskikulutus / 100) * litrahinta / maksajat);
-      }
-
-      return (
-        (calculate((kilometrit + (keskikulutus / 100) * litrahinta / maksajat))  
-      ));
-    };
-  
-    return Math.round(
-      calculate(
-        +kilometrit,
-        +keskikulutus,
-        +litrahinta,
-        +maksajat
-      )
-    );
-  };
-
-  const [kilometrit, setKilometrit] = useState();
-  const [keskikulutus, setKeskikulutus] = useState();
-  const [litrahinta, setLitrahinta] = useState();
-  const [maksajat, setMaksajat] = useState();
+  const [kilometrit, setKilometrit] = useState("");
+  const [keskikulutus, setKeskikulutus] = useState("");
+  const [litrahinta, setLitrahinta] = useState("");
+  const [maksajat, setMaksajat] = useState("");
   const [answer, setAnswer] = useState("");
 
+  const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
+    return Number(kilometrit + (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
+  };
+
   const onClick = () => {
-    const result = calculateTotal(
-      kilometrit,
-      keskikulutus,
-      litrahinta,
-      maksajat
-    );
+    const result = calculate();
     setAnswer(result);
   };
 
@@ -57,7 +27,7 @@ const Polttoainelaskuri = () => {
       <div className={styles.laskuri}>
         <div className={styles.laskuriRivi}>
           <div className={styles.label}>
-            <label htmlFor="Kilometrit">Kilometrit</label>
+            <label htmlFor="Kilometrit">Ajettu matka kilometreinä</label>
             <Input
               type="text"
               id="Kilometrit"
@@ -66,7 +36,7 @@ const Polttoainelaskuri = () => {
             />
           </div>
           <div className={styles.label}>
-            <label htmlFor="Keskikulutus">Keskikulutus</label>
+            <label htmlFor="Keskikulutus">Keskikulutus litraa / 100km</label>
             <Input
               type="text"
               id="Keskikulutus"
@@ -77,7 +47,7 @@ const Polttoainelaskuri = () => {
         </div>
         <div className={styles.laskuriRivi}>
           <div className={styles.label}>
-            <label htmlFor="Litrahinta">litrahinta</label>
+            <label htmlFor="Litrahinta">Polttoaineen hinta euroa / litra </label>
             <Input
               type="text"
               id="Litrahinta"
@@ -88,7 +58,7 @@ const Polttoainelaskuri = () => {
 
           <div className={styles.label}>
             <label htmlFor="Maksajat">
-              Maksajat 
+              Maksajien lukumäärä 
             </label>
             <Input
               type="text"
