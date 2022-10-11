@@ -12,18 +12,18 @@ const Polttoainelaskuri = () => {
     maksajat
   ) => {
     const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
-      if (kilometrit < 1) {
-        return Kilometrit;
-      }
+      // if (kilometrit < 1) {
+      //   return Kilometrit;
+      // }
       if (kilometrit === 1) {
         return (kilometrit + (keskikulutus / 100) * litrahinta / maksajat);
       }
 
       return (
-        (calculate(kilometrit, keskikulutus, litrahinta, maksajat)  
+        (calculate((kilometrit + (keskikulutus / 100) * litrahinta / maksajat))  
       ));
     };
-
+  
     return Math.round(
       calculate(
         +kilometrit,
