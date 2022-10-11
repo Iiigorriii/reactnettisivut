@@ -12,12 +12,24 @@ const Polttoainelaskuri = () => {
     maksajat
   ) => {
     const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
+      if (kilometrit < 1) {
+        return Kilometrit;
+      }
+      if (kilometrit === 1) {
+        return (kilometrit + (keskikulutus / 100) * litrahinta / maksajat);
+      }
+
+      return (
+        (calculate(kilometrit, keskikuluts, litrahinta, interest)  
+      ));
+    };
+
     return Math.round(
       calculate(
-        +startInvestment,
-        +monthlyInvestment,
-        +years,
-        1 + interest / 100
+        +kilometrit,
+        +keskikulutus,
+        +litrahinta,
+        +maksajat
       )
     );
   };
@@ -48,7 +60,7 @@ const Polttoainelaskuri = () => {
             <Input
               type="text"
               id="Kilometrit"
-              value={Kilometrit}
+              value={kilometrit}
               onChange={(e) => setKilometrit(e.target.value)}
             />
           </div>
@@ -57,7 +69,7 @@ const Polttoainelaskuri = () => {
             <Input
               type="text"
               id="Keskikulutus"
-              value={Keskikulutus}
+              value={keskikulutus}
               onChange={(e) => setKeskikulutus(e.target.value)}
             />
           </div>
@@ -68,7 +80,7 @@ const Polttoainelaskuri = () => {
             <Input
               type="text"
               id="Litrahinta"
-              value={Litrahinta}
+              value={litrahinta}
               onChange={(e) => setLitrahinta(e.target.value)}
             />
           </div>
@@ -80,7 +92,7 @@ const Polttoainelaskuri = () => {
             <Input
               type="text"
               id="Maksajat"
-              value={Maksajat}
+              value={maksajat}
               onChange={(e) => setMaksajat(e.target.value)}
             />
           </div>
