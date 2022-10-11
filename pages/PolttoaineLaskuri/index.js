@@ -12,13 +12,13 @@ const Polttoainelaskuri = () => {
   const [answer, setAnswer] = useState("");
 
   //Matkan polttoainekulut euroina kokonaisuudessaan
-  const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
-    return Number(kilometrit + (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
+  const calculateKok = (kilometrit, keskikulutus, litrahinta, maksajat) => {
+    return Number(kilometrit * (keskikulutus / 100) * litrahinta).toFixed(1);
   };
 
     //Matkan polttoainekulut euroina yhdeltän
-    const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
-      return Number(kilometrit + (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
+    const calculateYhd = (kilometrit, keskikulutus, litrahinta, maksajat) => {
+      return Number(kilometrit * (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
     };
 
   const onClick = () => {
