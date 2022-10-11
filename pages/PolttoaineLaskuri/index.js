@@ -20,7 +20,7 @@ const Polttoainelaskuri = () => {
       }
 
       return (
-        (calculate(kilometrit, keskikuluts, litrahinta, interest)  
+        (calculate(kilometrit, keskikulutus, litrahinta, interest)  
       ));
     };
 
