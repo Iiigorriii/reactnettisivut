@@ -2,7 +2,7 @@ import { Button, Heading, Input } from "@chakra-ui/react";
 import { useState } from "react";
 import { Layout } from "../../components/Layout";
 
-import styles from "../../styles/Polttoainelaskuri.module.css";
+import styles from "../../styles/PolttoaineLaskuri.module.css";
 
 const Polttoainelaskuri = () => {
   const calculateTotal = (
@@ -11,21 +11,7 @@ const Polttoainelaskuri = () => {
     litrahinta,
     maksajat
   ) => {
-    const calculate = (startInvestment, montlyInvestment, years, interest) => {
-      if (years < 1) {
-        return startInvestment;
-      }
-      if (years === 1) {
-        return (startInvestment + montlyInvestment * 12) * interest;
-      }
-
-      return (
-        (calculate(startInvestment, montlyInvestment, years - 1, interest) +
-          montlyInvestment * 12) *
-        interest
-      );
-    };
-
+    const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
     return Math.round(
       calculate(
         +startInvestment,
