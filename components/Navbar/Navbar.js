@@ -77,6 +77,15 @@ export const Navbar = () => {
           </MenuItem>
           <MenuItem
             onClick={() => {
+              push("/polttoainelaksuri");
+            }}
+          >
+            <div className={styles.nappula}>
+              <CgGym /> polttoainelaskuri
+            </div>
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
               push("/nft");
             }}
           >
