@@ -11,9 +11,15 @@ const Polttoainelaskuri = () => {
   const [maksajat, setMaksajat] = useState("");
   const [answer, setAnswer] = useState("");
 
+  //Matkan polttoainekulut euroina kokonaisuudessaan
   const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
     return Number(kilometrit + (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
   };
+
+    //Matkan polttoainekulut euroina yhdeltän
+    const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
+      return Number(kilometrit + (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
+    };
 
   const onClick = () => {
     const result = calculate();
@@ -73,7 +79,12 @@ const Polttoainelaskuri = () => {
       <br />
       <Heading size={"md"}>
         {answer
-          ? "Matkan polttoainekulut euroina: " + answer + " €"
+          ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + answer + " €"
+          : ""}
+      </Heading>
+      <Heading size={"md"}>
+        {answer
+          ? "Matkan polttoainekulut euroina yhdeltä: " + answer + " €"
           : ""}
       </Heading>
     </Layout>
