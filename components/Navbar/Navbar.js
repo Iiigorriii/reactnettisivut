@@ -81,7 +81,7 @@ export const Navbar = () => {
             }}
           >
             <div className={styles.nappula}>
-              <CgGym /> polttoainelaskuri
+              <GiGasPump /> polttoainelaskuri
             </div>
           </MenuItem>
           <MenuItem
