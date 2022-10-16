@@ -19,31 +19,33 @@ const Polttoainelaskuri = () => {
   //   return Number(kilometrit * (keskikulutus / 100) * litrahinta).toFixed(1);
   // };
 
-  //   //Matkan polttoainekulut euroina yhdeltän
-  //   const calculateYhd = (kilometrit, keskikulutus, litrahinta, maksajat) => {
-  //     return Number(kilometrit * (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
-  //   };
+    //Matkan polttoainekulut euroina yhdeltän
+    const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
+      return Number(kilometrit * (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
+    };
 
-  // const onClick = () => {
-  //   const result = calculate();
-  //   setAnswer(result);
+  const onClick = () => {
+    const result = calculate();
+    setAnswer(result);
+  };
+
+////////////////////
+  
+// function calculate() {
+  //   //Matkan polttoainekulut euroina kokonaisuudessaan
+  //   const calculateKok = kilometrit * (keskikulutus / 100) * litrahinta
+  
+  //   //Matkan polttoainekulut euroina yhdeltän
+  //   const calculateYhd = kilometrit * (keskikulutus / 100) * litrahinta / maksajat
   // };
 
-  function calculate() {
-    //Matkan polttoainekulut euroina kokonaisuudessaan
-    const calculateKok = kilometrit * (keskikulutus / 100) * litrahinta
-  
-    //Matkan polttoainekulut euroina yhdeltän
-    const calculateYhd = kilometrit * (keskikulutus / 100) * litrahinta / maksajat
-  };
-
-    const onClick = () => {
-    const result = calculate(
-    calculateTot,
-    calculateKok
-    );
-    setAnswer(result)
-  };
+  //   const onClick = () => {
+  //   const result = calculate(
+  //   calculateTot,
+  //   calculateKok
+  //   );
+  //   setAnswer(result)
+  // };
 
 
   return (
@@ -97,6 +99,11 @@ const Polttoainelaskuri = () => {
         <Button onClick={() => onClick()}>Laske</Button>
       </div>
       <br />
+      <Heading ssize={"md"}>
+        {calculate
+          ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + calculateKok + " €"
+          : ""}
+      </Heading>
       <Heading size={"md"}>
         {calculateKok
           ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + calculateKok + " €"
