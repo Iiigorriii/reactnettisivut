@@ -15,37 +15,23 @@ const Polttoainelaskuri = () => {
   const [calculateTot, setcalculateTot] = useState();
 
   // //Matkan polttoainekulut euroina kokonaisuudessaan
-  // const calculateKok = (kilometrit, keskikulutus, litrahinta, maksajat) => {
-  //   return Number(kilometrit * (keskikulutus / 100) * litrahinta).toFixed(1);
-  // };
+
 
     //Matkan polttoainekulut euroina yhdeltän
     const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
-      return Number(kilometrit * (keskikulutus / 100) * litrahinta / maksajat).toFixed(1);
+      return Number(kilometrit * (keskikulutus / 100) * litrahinta / maksajat).toFixed(2);
     };
 
   const onClick = () => {
-    const result = calculate();
+    const result = calculate(
+      kilometrit,
+      keskikulutus,
+      litrahinta,
+      maksajat
+    );
     setAnswer(result);
   };
 
-////////////////////
-  
-// function calculate() {
-  //   //Matkan polttoainekulut euroina kokonaisuudessaan
-  //   const calculateKok = kilometrit * (keskikulutus / 100) * litrahinta
-  
-  //   //Matkan polttoainekulut euroina yhdeltän
-  //   const calculateYhd = kilometrit * (keskikulutus / 100) * litrahinta / maksajat
-  // };
-
-  //   const onClick = () => {
-  //   const result = calculate(
-  //   calculateTot,
-  //   calculateKok
-  //   );
-  //   setAnswer(result)
-  // };
 
 
   return (
@@ -100,11 +86,11 @@ const Polttoainelaskuri = () => {
       </div>
       <br />
       <Heading ssize={"md"}>
-        {calculate
-          ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + calculateKok + " €"
+        {answer 
+          ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + answer + " €"
           : ""}
       </Heading>
-      <Heading size={"md"}>
+      {/* <Heading size={"md"}>
         {calculateKok
           ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + calculateKok + " €"
           : ""}
@@ -113,7 +99,7 @@ const Polttoainelaskuri = () => {
         {calculateTot
           ? "Matkan polttoainekulut euroina yhdeltä: " + calculateTot + " €"
           : ""}
-      </Heading>
+      </Heading> */}
     </Layout>
   );
 };
