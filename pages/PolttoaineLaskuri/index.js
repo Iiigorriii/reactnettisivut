@@ -85,9 +85,9 @@ const Polttoainelaskuri = () => {
         <Button onClick={() => onClick()}>Laske</Button>
       </div>
       <br />
-      <Heading ssize={"md"}>
+      <Heading size={"md"}>
         {answer 
-          ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + answer + " €"
+          ? "Matkan polttoainekulut yhdeltä: " + answer + " €"
           : ""}
       </Heading>
       {/* <Heading size={"md"}>
