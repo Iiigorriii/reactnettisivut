@@ -10,7 +10,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { AiOutlineAreaChart, AiFillHome, AiFillPicture } from "react-icons/ai";
 import { CgGym } from "react-icons/cg";
-import { GiHamburgerMenu, GiImperialCrown, GiSlipknot } from "react-icons/gi";
+import { GiGasPump, GiHamburgerMenu, GiImperialCrown, GiSlipknot } from "react-icons/gi";
 
 import styles from "./Navbar.module.css";
 
