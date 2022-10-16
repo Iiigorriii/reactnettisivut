@@ -77,7 +77,7 @@ export const Navbar = () => {
           </MenuItem>
           <MenuItem
             onClick={() => {
-              push("/PolttoaineLaskuri");
+              push("/polttoainelaskuri");
             }}
           >
             <div className={styles.nappula}>
