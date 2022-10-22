@@ -38,13 +38,13 @@ const Polttoainelaskuri = () => {
     <Layout>
       <Heading>Polttoainelaskuri</Heading>
       <br/>
-      <text>Laske paljonko ajomatka maksaa. </text>
+      <text>Laske paljonko ajomatka maksaa euroina. Syötä polttoainelaskuriin matka pituus kilometreinä, keskikulutus litroina, polttoaineen litrahinta ja maksajien lukumäärä. </text>
       <br />
       <div className={styles.laskuri}>
         <div className={styles.laskuriRivi}>
           <div className={styles.label}>
             <label htmlFor="Kilometrit">
-              <p className={styles.style1}>Ajettu matka kilometreinä</p>
+              <p className={styles.style1}>Matkan pituus kilometreinä</p>
             </label>
             <Input
               type="text"
@@ -59,7 +59,7 @@ const Polttoainelaskuri = () => {
               </label>
             <Input
               type="text"
-              id="Keskikulutus"
+              id="Keskikulutus"f
               value={keskikulutus}
               onChange={(e) => setKeskikulutus(e.target.value)}
             />
