@@ -9,27 +9,34 @@ const Polttoainelaskuri = () => {
   const [keskikulutus, setKeskikulutus] = useState("");
   const [litrahinta, setLitrahinta] = useState("");
   const [maksajat, setMaksajat] = useState("");
-  const [answer, setAnswer] = useState("");
+  const [answerPerPerson, setAnswerPerPerson] = useState("");
+  const [answerTotal, setAnswerTotal] = useState("");
 
-  const [calculateKok, setCalculateKok] = useState();
-  const [calculateTot, setcalculateTot] = useState();
 
   // //Matkan polttoainekulut euroina kokonaisuudessaan
-
+  const calculateTotal = (kilometrit, keskikulutus, litrahintat) => {
+    return Number(kilometrit * (keskikulutus / 100) * litrahinta).toFixed(2);
+  };
 
     //Matkan polttoainekulut euroina yhdeltän
-    const calculate = (kilometrit, keskikulutus, litrahinta, maksajat) => {
+    const calculatePerPerson = (kilometrit, keskikulutus, litrahinta, maksajat) => {
       return Number(kilometrit * (keskikulutus / 100) * litrahinta / maksajat).toFixed(2);
     };
 
   const onClick = () => {
-    const result = calculate(
+    const resultPerPerson = calculatePerPerson(
       kilometrit,
       keskikulutus,
       litrahinta,
       maksajat
     );
-    setAnswer(result);
+    const resultTotal = calculateTotal(
+      kilometrit,
+      keskikulutus,
+      litrahinta
+    );
+    setAnswerPerPerson(resultPerPerson);
+    setAnswerTotal(resultTotal);
   };
 
 
@@ -95,20 +102,16 @@ const Polttoainelaskuri = () => {
       </div>
       <br />
       <Heading size={"md"}>
-        {answer 
-          ? "Matkan polttoainekulut yhdeltä: " + answer + " €"
-          : ""}
-      </Heading>
-      {/* <Heading size={"md"}>
-        {calculateKok
-          ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + calculateKok + " €"
+        {answerPerPerson 
+          ? "Matkan polttoainekulut henkilöltä: " + answerPerPerson + " €"
           : ""}
       </Heading>
       <Heading size={"md"}>
-        {calculateTot
-          ? "Matkan polttoainekulut euroina yhdeltä: " + calculateTot + " €"
+        {answerTotal 
+          ? "Matkan polttoainekulut euroina kokonaisuudessaan: " + answerTotal + " €"
           : ""}
-      </Heading> */}
+      </Heading>
+      
     </Layout>
   );
 };
