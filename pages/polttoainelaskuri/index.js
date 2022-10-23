@@ -42,7 +42,7 @@ const Polttoainelaskuri = () => {
       <br />
       <div className={styles.laskuri}>
         <div className={styles.laskuriRivi}>
-          <div className={styles.label}>
+          <div className={styles.label}> 
             <label htmlFor="Kilometrit">
               <p className={styles.style1}>Matkan pituus kilometreinä</p>
             </label>
