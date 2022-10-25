@@ -24,18 +24,24 @@ const Polttoainelaskuri = () => {
     };
 
   const onClick = () => {
-    const resultPerPerson = calculatePerPerson(
-      kilometrit,
-      keskikulutus,
-      litrahinta,
-      maksajat
-    );
     const resultTotal = calculateTotal(
       kilometrit,
       keskikulutus,
       litrahinta
-    );
-    setAnswerPerPerson(resultPerPerson);
+  );
+
+    if (maksajat > 1) {
+      const resultPerPerson = calculatePerPerson(
+        kilometrit,
+        keskikulutus,
+        litrahinta,
+        maksajat
+      );
+      setAnswerPerPerson(resultPerPerson);
+    } else {
+    }
+    
+    // setAnswerTotal(resultTotal);
     setAnswerTotal(resultTotal);
   };
 
