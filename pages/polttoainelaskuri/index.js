@@ -40,9 +40,10 @@ const Polttoainelaskuri = () => {
       setAnswerPerPerson(resultPerPerson);
     } else {
     }
-    
     // setAnswerTotal(resultTotal);
     setAnswerTotal(resultTotal);
+  
+  
   };
 
 
