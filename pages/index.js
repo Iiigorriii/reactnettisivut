@@ -10,7 +10,7 @@ const Home = () => (
     >
       GitHub link 
     </a>
-  
+    <h1>This site has been visited <span id="visits"></span> times.</h1>
   </Layout>
 );
 
