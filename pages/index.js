@@ -10,6 +10,10 @@ const Home = () => (
     >
       GitHub link 
     </a>
+    <head>
+    <script defer data-domain="c.veikkap.com" src="https://plausible.io/js/script.js"></script>
+
+    </head>
   
   </Layout>
 );
