@@ -10,7 +10,7 @@ const Home = () => (
       >
       My Homepage 
     </a>
-
+    <br></br>
     <a
       href="https://github.com/Veikkap"
       target="_blank"
