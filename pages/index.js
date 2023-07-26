@@ -12,7 +12,7 @@ const Home = () => (
     </a>
     <br></br>
     <a
-      href="https://github.com/Veikkap"
+      href="https://github.com/veikka-p"
       target="_blank"
       rel="noreferrer"
     >
